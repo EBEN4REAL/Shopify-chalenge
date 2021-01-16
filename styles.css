@@ -12,10 +12,28 @@ body {
     width: 60%;
     margin: 0 auto;
     padding: 50px;
-    margin-top: 100px;
+    margin-top: 50px;
+}
+.mt-3 {
+    margin-top: 15px;
+}
+.ml-3 {
+    margin-left: 15px;
+}
+.mr-3 {
+    margin-right: 15px;
+}
+.pt-3 {
+    padding-top: 15px;
+}
+.pl-3 {
+    padding-left: 15px;
+}
+.pr-3 {
+    padding-right: 15px !important;
 }
 .app_container .app_body {
-    padding: 20px 5px;
+    padding: 15px 5px;
 }
 .app_container .app_body .search_container {
     background: white;
@@ -37,12 +55,15 @@ body {
     flex: 0 0 5%;
     margin-left: 20px;
 }
+.app_container .app_body .search_container .search_wrapper .search_input {
+    flex: 0 0 95%;
+}
 .app_container .app_body .search_container .search_wrapper .search_input input {
+    height: 100%;
     background: transparent;
     border: none;
     outline: 0;
-    flex: 0 0 95%;
-    height: 100%
+    width: 100%;
 }
 .app_container .app_body .results_container{
     display: flex;

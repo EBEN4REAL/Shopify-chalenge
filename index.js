@@ -1,0 +1,18 @@
+ (function () {
+    document.querySelector(".search-movies").addEventListener('input', (e) => {
+        document.querySelector(".search_text").textContent = e.target.value
+        const getMovies = async () => {
+            const response = await fetch(`https://www.omdbapi.com/?s=${e.target.value}&apikey=4a3b711b`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            }).then(res => {
+                console.log(res.data)
+            }).catch(e => {
+                console.log(e)
+            })
+        }
+        getMovies()
+    })
+ })()
