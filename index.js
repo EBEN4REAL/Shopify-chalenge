@@ -1,4 +1,4 @@
- (function searchMovies () {
+ (function () {
     document.querySelector(".search-movies").addEventListener('input', (e) => {
         document.querySelector(".search_text").textContent = e.target.value
         const getMovies = async () => {
@@ -7,7 +7,7 @@
               return response.json();
             })
             .then(jsonResponse => {
-
+                console.log(jsonResponse)
             });
             return response
         }
@@ -17,5 +17,4 @@
  })()
 
 
- console.log(searchMovies)
 
