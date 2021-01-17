@@ -14,8 +14,14 @@ body {
     padding: 50px;
     margin-top: 50px;
 }
+.mt-2 {
+    margin-top: 10px !important;
+}
+.mb-3 {
+    margin-bottom: 15px;
+}
 .mt-3 {
-    margin-top: 15px;
+    margin-top: 15px !important;
 }
 .ml-3 {
     margin-left: 15px;
@@ -31,6 +37,9 @@ body {
 }
 .pr-3 {
     padding-right: 15px !important;
+}
+.pb-3 {
+    padding-bottom: 15px;
 }
 .app_container .app_body {
     padding: 15px 5px;
@@ -75,11 +84,61 @@ body {
     flex:  0 0 49%;
     background: white;
     box-shadow: 0px 1px 4px #00000029;
-    min-height: 250px;
+    height: 300px;
+    overflow: auto;
 }
 .app_container .app_body .results_container .search_nominations {
     flex:  0 0 49%;
     background: white;
     box-shadow: 0px 1px 4px #00000029;
-    min-height: 250px;
+    height: 300px;
+    
+}
+.results_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: aliceblue;
+    box-shadow: 0px 1px 4px #00000029;
+    width: 87%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.results_wrapper .search_action button{
+    background: transparent;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.movies-list {
+    padding-bottom: 20px;
+}
+
+/* Scroll Style */
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(211, 211, 211, 0.49);
+    border-radius: 5px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 5px;
+}
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: lightgray;
 }
